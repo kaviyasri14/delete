@@ -6,11 +6,13 @@ import {CheckboxModule} from 'primeng/checkbox';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import {ButtonModule} from 'primeng/button';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
    
    
   ],
