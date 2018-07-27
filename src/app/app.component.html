@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <!-- <p-checkbox name="groupname" value="val1" label="one"[(ngModel)]="selectedValues"></p-checkbox>
 <p-checkbox name="groupname" value="val2" label="two"[(ngModel)]="selectedValues"></p-checkbox> -->
-<router-outlet></router-outlet>
+
 <h3 class="first">Basic</h3>
 <div class="ui-g" style="width:250px;margin-bottom:10px">
     <div class="ui-g-12"><p-checkbox name="group1" id="cityid" *ngFor="let city of cities" value="{{city}}" label={{city}} [(ngModel)]="selectedCities"[ngModel]="isChecked" (ngModelChange)="onCheckboxChange($event)" inputId="ny"></p-checkbox></div>

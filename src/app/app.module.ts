@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import {ButtonModule} from 'primeng/button';
 import { LoginComponent } from './login/login.component';
-
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
+import { Http, HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    ChildComponent,
+    ParentComponent,
    
    
   ],
@@ -21,10 +25,12 @@ import { LoginComponent } from './login/login.component';
     CheckboxModule,
     AccordionModule,
     FormsModule,
-    ButtonModule
+    ButtonModule,
+    HttpModule
+    
     
   ],
-  providers: [],
+  providers: [Http],
   bootstrap: [AppComponent]
 })
 export class AppModule {

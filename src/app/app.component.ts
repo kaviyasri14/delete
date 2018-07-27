@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { NgModule } from '@angular/core';
-import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
+import {AccordionModule} from 'primeng/accordion';   
 import {MenuItem} from 'primeng/api'; 
-import {CheckboxModule} from 'primeng/checkbox';               
+import {CheckboxModule} from 'primeng/checkbox';         
+ import { HttpModule, Http } from '@angular/http';
 
-import { Routes } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -36,6 +36,8 @@ for(let city in this.selectedCities)
 }        
 }
 
- }
+}
+
+ 
  
 
